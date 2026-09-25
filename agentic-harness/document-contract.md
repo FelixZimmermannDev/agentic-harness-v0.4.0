@@ -39,7 +39,7 @@ Vorlagen und Idea-/Spec-Artefakte einschließlich ihrer `S000-readme.md`-Einstie
 
 ## Projektspezifische Gerüste
 
-In `agentic-harness/harness/project.md` und den Projekt-Docs bleiben Kopf und „Universeller Rahmen“ erhalten. `agentic-harness/harness/init.md` ersetzt die Platzhalter unter „Projektspezifische Befüllung“ durch bestätigte Inhalte. Die Produkt-`README.md` wird dagegen für Menschen ohne Metakopf erstellt oder ergänzt.
+In `agentic-harness/harness/project.md` und den Projekt-Docs bleiben Kopf und „Universeller Rahmen“ erhalten. `agentic-harness/harness/init.md` ersetzt die Platzhalter unter „Projektspezifische Befüllung“ durch bestätigte Inhalte. Die zunächst leere Root-`README.md` wird für Menschen ohne Metakopf mit bestätigten Produktinformationen befüllt; vorhandene Produktinhalte werden ergänzt.
 
 Beim Befüllen dieser Gerüste auch den Kopf gegen das Projekt prüfen: Stimmen **Zuständigkeit, Auslöser, Ladebeziehungen und Abgrenzung** noch? Status nur ändern, wenn die Datei tatsächlich befüllt ist. Offene Entscheidungen ausdrücklich offen lassen. Neue Projekt-Docs brauchen einen erreichbaren Leseauslöser; eine geänderte Dateirolle ist Harness-Arbeit.
 

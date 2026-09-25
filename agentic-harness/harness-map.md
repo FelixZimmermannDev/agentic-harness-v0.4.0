@@ -9,7 +9,7 @@
 
 ## Pfadbasis
 
-Die Tabelle zeigt Pfade **relativ zum geplanten Projekt-Root**. Derzeit liegen `harness/` und `docs/` noch unter `agentic-harness/`; `AGENTS.md` liegt bereits im Root. Vertrag und Landkarte liegen derzeit unter `agentic-harness/` und bleiben auch in der Zielstruktur im Harness (`harness/document-contract.md`, `harness/harness-map.md`). Beim Kopieren von Root-`AGENTS.md` und `agentic-harness/` in ein neues Projekt bleiben diese aktuellen Pfade gültig; die Tabelle ist keine Installationsanweisung. Die `README.md` dieses Quell-Repositories ist eine Harness-Anleitung, nicht die Produkt-README im Zielprojekt. Bis zu einer Migration sind die tatsächlichen Pfade im Root-`AGENTS.md` maßgeblich.
+Die Tabelle zeigt Pfade **relativ zum geplanten Projekt-Root**. Derzeit liegen `harness/` und `docs/` noch unter `agentic-harness/`; `AGENTS.md` liegt bereits im Root. Vertrag und Landkarte liegen derzeit unter `agentic-harness/` und bleiben auch in der Zielstruktur im Harness (`harness/document-contract.md`, `harness/harness-map.md`). Beim Exportieren des versionierten Projektinhalts bleiben diese aktuellen Pfade gültig; die Tabelle ist keine Installationsanweisung. Die Root-`README.md` ist ein zunächst leeres Produktgerüst; `agentic-harness/README.md` bleibt die menschliche Harness-Anleitung im Zielprojekt. Bis zu einer Migration sind die tatsächlichen Pfade im Root-`AGENTS.md` maßgeblich.
 
 ## Universelle Dateien
 
@@ -20,6 +20,7 @@ Die Tabelle zeigt Pfade **relativ zum geplanten Projekt-Root**. Derzeit liegen `
 | `harness/init.md` | Leeres Projekt für ersten Schritt klären | Bei Init → `harness/harness-map.md` und `harness/document-contract.md`; danach Projektdateien befüllen. |
 | `harness/harness-map.md` | Dateirollen und Ladewege | Bei Orientierung oder Änderungen der Dokumentstruktur; keine Projektfakten. |
 | `harness/document-contract.md` | Format und Pflege neuer Markdown-Dateien | Beim Anlegen/Befüllen von Projekt-Docs und bei Pfadänderungen. |
+| `harness/README.md` | Anleitung zum Harness für Menschen (aktuell `agentic-harness/README.md`) | Im neuen Projekt mitübernehmen; kein Agenten-Ladeweg. |
 | `ideas/S000-readme.md`, `specs/S000-readme.md` | Einstiege und Statusregeln für Ideas bzw. Specs | Bedingt über `AGENTS.md`; betroffene Artefakte lesen, Templates nur bei Neuanlage. |
 | `harness/templates/idea.md`, `harness/templates/spec.md` | Form der jeweiligen Artefakte | Nur beim Anlegen von Ideas bzw. Specs. |
 | `harness/verification/gate.md` | Soll und belegtes Ist zur Abschlussentscheidung verbinden | Nach Änderung → `harness/verification/requirements.md` und `harness/verification/implementation.md`; bei Lücke → `harness/verification/fail.md`. |
@@ -41,7 +42,7 @@ Die Tabelle zeigt Pfade **relativ zum geplanten Projekt-Root**. Derzeit liegen `
 | `docs/architecture.md` | Bausteine, Schnittstellen und Datenfluss | Bei Architektur/Struktur; Codekonventionen → `docs/code.md`. |
 | `docs/code.md` | Geltender Stack, Abhängigkeiten und Codekonventionen | Bei Codearbeit; Modulgrenzen → `docs/architecture.md`. |
 | `docs/testing.md` | Auswahl von Testebenen/-arten, Ausführungsanlässen, Werkzeugen und Teststruktur | Bei Init und Testarbeit aus Ziel, Architektur und Stack; konkrete Befehle → `harness/project.md`. |
-| `README.md` | Produktüberblick, Einrichtung und Start für Menschen | Im Zielprojekt beim Init ohne Metakopf anlegen oder bestehende Produktinformationen ergänzen. |
+| `README.md` | Produktüberblick, Einrichtung und Start für Menschen | Root-Gerüst beim Init ohne Metakopf mit bestätigten Produktinformationen befüllen. |
 | `ideas/`, `specs/` | Konkrete Ideen bzw. beauftragtes Soll | Nur betroffene Artefakte lesen; neue erst bei Bedarf anlegen. |
 
 Bei `harness/project.md`, `docs/architecture.md`, `docs/code.md` und `docs/testing.md` bleiben Dokumentkopf und „Universeller Rahmen“ erhalten. Init füllt dort den Bereich „Projektspezifische Befüllung“; die Produkt-`README.md` ist ein menschlicher Einstieg ohne Metakopf. Die Root-`AGENTS.md` behält universelles Routing; zusätzliche Projektverweise stehen nur unter „Projektspezifische Ergänzungen“.
